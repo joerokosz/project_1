@@ -1,0 +1,57 @@
+div > img {
+  display: block;
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 75%;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    margin: 25px;
+}
+
+/*====================================
+
+Mobile Devices: 0 to 480px
+
+=====================================
+*/
+
+@media only screen and (max-width: 480px) {
+    nav ul.navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .blockquote {
+      display: none;
+    }
+
+    h3 {
+      display: none;
+    }
+
+    body {
+      width: 85%;
+    }
+
+    div > img {
+      margin-top: -15px;
+      width: 20%;
+    }
+}

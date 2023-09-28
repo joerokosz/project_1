@@ -1,0 +1,163 @@
+/* Style for the header */
+header {
+    background-color: #white;
+    color: white;
+    text-align: left;
+    padding: 0px;
+}
+
+
+nav {
+    width: 100%;
+}
+
+header, footer {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+aside {
+    flex: 1 1 120px;
+    width: 30%;
+}
+
+section#topics {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section#topics article {
+    flex: 1 1 250px;
+}
+
+body aside h1 {
+    background-color: tan;
+    text-align: center;
+    margin-top: 0px;
+    border: 1.5px double yellow;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px black;
+}
+
+
+body aside ul {
+   margin: 10px;
+}
+
+body aside li {
+   line-height: 1.4em;
+   margin-top: 10px;
+}
+
+div.schedule {
+    text-align: center;
+    list-style-position: inside;
+}
+
+section#topics article {
+   border: 1px solid rgb(31, 73, 135);
+   border-radius: 45px;
+   margin: 10px;
+   padding: 18px;
+}
+
+section#topics article h1 {
+   font-size: 1.2em;
+   margin: 5px;
+   text-align: center;
+}
+
+section#topics article p {
+   margin: 8px;
+   }
+
+body aside {
+    background-color: white;
+}
+
+section > article {
+    border-color: black;
+    border-width: thin;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 25px;
+}
+
+/*====================================
+
+Mobile Devices: 0 to 480px
+
+=====================================
+*/
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 10.3pt;
+    }
+
+    nav ul.navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     body aside h1 {
+        display: block;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    div.schedule {
+        text-align: left;
+        font-size: 10.3pt;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    div.schedule ul{
+        padding-left: 0px;
+    }
+}
+
+/*
+===========================================
+
+Tablet Styles
+
+===========================================
+*/
+
+
+
+@media only screen and (min-width: 481px) {
+
+     body aside h1 {
+        display: block;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+
+}
